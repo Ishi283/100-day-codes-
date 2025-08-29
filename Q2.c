@@ -23,12 +23,12 @@ int main()
     d=a-b;
     p=a*b;
     q=a/b;
-    printf("sum=%d\n",s);
-    printf("difference=%d\n",d);
-    printf("product=%d\n",p);
+    printf("sum=%d ,",s);
+    printf("difference=%d ,",d);
+    printf("product=%d ,",p);
     if(b!=0)
     {
-    printf("quotient=%d\n",q);
+    printf("quotient=%d",q);
     }
     else
     {
@@ -37,4 +37,5 @@ int main()
     getchar();
     getchar();
     return 0;
+
 }
