@@ -1,18 +1,18 @@
-// Q56: Read and print elements of a one-dimensional array.
+// Q57: Find the sum of array elements.
 
 /*
 Sample Test Cases:
 Input 1:
-3
-10 20 30
+4
+2 4 6 8
 Output 1:
-10 20 30
+20
 
 Input 2:
-5
-1 2 3 4 5
+3
+1 1 1
 Output 2:
-1 2 3 4 5
+3
 
 */
 #include <stdio.h>
@@ -27,14 +27,12 @@ int main()
 {
     input();
     int ar[l];
+    int sum = 0;
     for (int i = 0; i < l; i++)
     {
         printf("Enter element for %d index :", i);
         scanf("%d", &ar[i]);
+        sum += ar[i];
     }
-    printf("\n\n\n");
-    for (int i = 0; i < l; i++)
-    {
-        printf("Enter element for %d index :%d\n", i, ar[i]);
-    }
+    printf("%d", sum);
 }
