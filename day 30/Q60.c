@@ -1,18 +1,12 @@
-// Q59: Count even and odd numbers in an array.
+// Q60 : Count positive, negative, and zero elements in an array.
 
 /*
 Sample Test Cases:
 Input 1:
-6
-1 2 3 4 5 6
+5
+-1 0 1 2 -2
 Output 1:
-Even=3, Odd=3
-
-Input 2:
-4
-2 4 6 8
-Output 2:
-Even=4, Odd=0
+Positive=2, Negative=2, Zero=1
 
 */
 #include <stdio.h>
@@ -32,22 +26,23 @@ int main()
         printf("Enter element for %d index :", i);
         scanf("%d", &ar[i]);
     }
-    int codd = 0;
-    int ceven = 0;
+    int cneg = 0;
+    int cpos = 0;
+    int czero = 0;
     for (int i = 0; i < l; i++)
     {
-        if (ar[i] % 2== 0)
+        if (ar[i]>0)
         {
-            ceven++;
+            cpos++;
         }
-        else if(ar[i]==0)
+        else if (ar[i] == 0)
         {
-            continue;
+            czero++;
         }
         else
         {
-            codd++;
+            cneg++;
         }
     }
-    printf("Odd :%d, Even %d", codd, ceven);
+    printf("Negative :%d, Positive: %d, Zero : %d", cneg, cpos, czero);
 }
