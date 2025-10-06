@@ -19,7 +19,7 @@ Even=4, Odd=0
 int l;
 int input()
 {
-    printf("Enter length of Array. ");
+    printf("Enter length of Array: ");
     scanf("%d", &l);
 }
 
@@ -50,4 +50,5 @@ int main()
         }
     }
     printf("Odd :%d, Even %d", codd, ceven);
+
 }
