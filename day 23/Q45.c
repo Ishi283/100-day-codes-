@@ -17,13 +17,14 @@ Output 2:
 int main()
 {
     int n;
-    float sum=0.0;
+    float sum=1;
     printf("Enter the n term:");
     scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    for(int i=2;i<=n;i++)
     {
         sum+=(float)(2*i)/(4*i-1);
     }
     printf("%.2f",&sum);
     return 0;
+
 }
