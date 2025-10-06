@@ -17,12 +17,15 @@ Output 2:
 int main()
 {
     int i, n, sum=0;
+    int t;
     printf("Enter the number: ");
     scanf("%d", &n);
-    for(i=1; i<=n; i+=2)
+    t=n+n;
+    for(i=1; i<=t; i+=2)
     {
         sum += i;
     }
     printf("%d", sum);
     return 0;
 }
+
