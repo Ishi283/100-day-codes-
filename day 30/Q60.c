@@ -13,7 +13,7 @@ Positive=2, Negative=2, Zero=1
 int l;
 int input()
 {
-    printf("Enter length of Array. ");
+    printf("Enter length of Array: ");
     scanf("%d", &l);
 }
 
@@ -45,4 +45,5 @@ int main()
         }
     }
     printf("Negative :%d, Positive: %d, Zero : %d", cneg, cpos, czero);
+
 }
