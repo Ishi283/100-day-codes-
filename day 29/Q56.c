@@ -35,6 +35,7 @@ int main()
     printf("\n\n\n");
     for (int i = 0; i < l; i++)
     {
-        printf("Enter element for %d index :%d\n", i, ar[i]);
+        printf("%d ", ar[i]);
     }
+
 }
