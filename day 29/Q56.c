@@ -32,10 +32,11 @@ int main()
         printf("Enter element for %d index :", i);
         scanf("%d", &ar[i]);
     }
-    printf("\n\n\n");
+    printf("\n");
     for (int i = 0; i < l; i++)
     {
         printf("%d ", ar[i]);
     }
 
 }
+
