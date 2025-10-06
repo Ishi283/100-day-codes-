@@ -17,13 +17,14 @@ Approximate sum: 4.4
 int main()
 {
     int n;
-    float sum=0.0;
+    float sum=1;
     printf("Enter the n term:");
     scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    for(int i=2;i<=n;i++)
     {
         sum+=(float)(2*i-1)/(float)(2*i);
     }
     printf("Approximate sum: %.1f",sum);
     return 0;
+
 }
