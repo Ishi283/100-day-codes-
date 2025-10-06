@@ -19,7 +19,7 @@ Output 2:
 int l;
 int input()
 {
-    printf("Enter length of Array. ");
+    printf("Enter length of Array: ");
     scanf("%d", &l);
 }
 
@@ -35,4 +35,5 @@ int main()
         sum += ar[i];
     }
     printf("%d", sum);
+
 }
