@@ -1,13 +1,13 @@
-//Q67: Insert an element in an array at a given position.
+//Q68: Delete an element from an array.
 
 /*
 Sample Test Cases:
 Input 1:
-4
-10 20 30 40
-2 15
+5
+1 2 3 4 5
+2
 Output 1:
-10 20 15 30 40
+1 2 4 5
 
 */
 #include<stdio.h>
@@ -21,26 +21,23 @@ int main()
 {
     input();
     int ar[a];
-    int pos,val;
+    int pos;
     for(int i=0; i<a; i++)
     {
         printf("Enter the %d index:",i);
         scanf("%d",&ar[i]);
     }
     int n=a;
-     printf("Enter the position: ");
+     printf("Enter the position of element to be deleted: ");
      scanf("%d",&pos);
-     printf("Enter the element to be inserted:");
-     scanf("%d",&val);
-    for(int i=n; i>=pos; i--)
+    for(int i=pos-1; i<n-1; i++)
     {
-        ar[i]=ar[i-1];
+        ar[i]=ar[i+1];
     }
-    ar[pos-1]=val;
-    n++;
+    n--;
     for(int i=0; i<n; i++)
     {
-    printf("%d ",ar[i]);
+        printf("%d ",ar[i]);
     }
     return 0;
 }
