@@ -1,14 +1,13 @@
-//Q71: Read and print a matrix.
+//Q72: Find the sum of all elements in a matrix.
 
 /*
 Sample Test Cases:
 Input 1:
-2 2
-1 2
-3 4
+2 3
+1 2 3
+4 5 6
 Output 1:
-1 2
-3 4
+21
 
 */
 #include<stdio.h>
@@ -28,14 +27,15 @@ int main()
             scanf("%d",&arr[i][j]);
         }
     }
-
-    for (int i=0; i<a; i++)
+    
+    int sum = 0;
+    for(int i=0; i<a; i++)
     {
-        for (int j=0; j<b; j++)
+        for(int j=0; j<b; j++)
         {
-            printf("%d ",arr[i][j]);
+            sum = sum + arr[i][j];
         }
-        printf("\n");
     }
+    printf("Sum : %d",sum);
     return 0;
 }
