@@ -1,4 +1,4 @@
-//Q73: Find the sum of each row of a matrix and store it in an array.
+//Q74: Find the transpose of a matrix.
 
 /*
 Sample Test Cases:
@@ -7,7 +7,9 @@ Input 1:
 1 2 3
 4 5 6
 Output 1:
-6 15
+1 4
+2 5
+3 6
 
 */
 #include<stdio.h>
@@ -27,20 +29,32 @@ int main()
             scanf("%d",&arr[i][j]);
         }
     }
-   
-    int row[a];
-    for (int i = 0; i<a; i++)
+    printf("Array:\n");
+    for(int i=0;i<a;i++)
     {
-         int sum = 0;
-        for(int j=0; j<b; j++)
+        for(int j=0;j<b;j++)
         {
-            sum = sum + arr[i][j];
+            printf("%d ",arr[i][j]);
         }
-        row[i]= sum;
+        printf("\n");
     }
-    for(int i=0; i<a; i++)
+    printf("Transpose:\n");
+int trans[b][a];
+for (int i=0; i<a; i++)
+{
+    for(int j=0; j<b; j++)
     {
-      printf("%d ", row[i]);
+        trans[j][i]=arr[i][j];
     }
-    return 0;
+}
+for(int i=0; i<b; i++)
+{
+    for(int j=0;j<a; j++)
+    {
+        printf("%d ",trans[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+
 }
