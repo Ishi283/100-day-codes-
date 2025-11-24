@@ -1,4 +1,4 @@
-//Q77: Check if the elements on the diagonal of a matrix are distinct.
+//Q78: Find the sum of main diagonal elements for a square matrix.
 
 /*
 Sample Test Cases:
@@ -6,17 +6,9 @@ Input 1:
 3 3
 1 2 3
 4 5 6
-7 8 1
-Output 1:
-False
-
-Input 2:
-3 3
-1 2 3
-4 5 6
 7 8 9
-Output 2:
-True
+Output 1:
+15
 
 */
 #include<stdio.h>
@@ -36,25 +28,11 @@ int main()
             scanf("%d",&arr[i][j]);
         }
     }
-    int d=1;
+    int sum = 0;
     for(int i=0;i<a;i++)
     {
-        for(int j=i+1;j<b;j++)
-        {
-            if(arr[i][i]==arr[j][j])
-            {
-            d=0;
-            break;
-            }
-        }
-        if(!d)
-        {
-            break;
-        }
+        sum = sum + arr[i][i];
     }
-    if(d)
-    printf("True");
-else  
-printf("False");
-return 0;
+    printf("Sum is %d",sum);
+    return 0;
 }
